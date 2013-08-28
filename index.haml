@@ -5,6 +5,15 @@
 		%meta{:name => "viewport",:content => "width=device-width"}
 		%link{:href => "css/bootstrap.css",:rel => "stylesheet",:type => "text/css"}
 		%script{:src => "js/bootstrap.min.js"}
+		%style body { padding-top: 60px;}
 	%body
-		%a.btn.btn-primary{:href => "https://google.com"} Google
-		
+		.navbar.navbar-fixed-top.navbar-inverse
+			.container
+				.navbar-header
+					%a.navbar-brand{:href => "/"} legobmw99
+				.navbar-collapse.collapse
+					%ul.nav.navbar-nav
+						%li{:class => "active"}
+							%a{:href => "index.html"}
+								.glyphicon.glyphicon-home.glyphicon-white
+								Home
