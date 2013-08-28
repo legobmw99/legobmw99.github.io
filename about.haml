@@ -1,7 +1,7 @@
 !!! 5
 %html
 	%head
-		%title legobmw99 - Home
+		%title legobmw99 - About
 		%meta{:name => "viewport",:content => "width=device-width"}
 		%link{:href => "css/bootstrap.css",:rel => "stylesheet",:type => "text/css"}
 		%script{:src => "js/bootstrap.min.js"}
@@ -13,11 +13,11 @@
 					%a.navbar-brand{:href => "/"} legobmw99
 				.navbar-collapse.collapse
 					%ul.nav.navbar-nav
-						%li{:class => "active"}
-							%a{:href => "index.html"}
+						%li
+							%a{:href => "/"}
 								.glyphicon.glyphicon-home.glyphicon-white
 								Home
-						%li
+						%li{:class => "active"}
 							%a{:href => "about.html"}
 								.glyphicon.glyphicon-info-sign.glyphicon-white
 								About
