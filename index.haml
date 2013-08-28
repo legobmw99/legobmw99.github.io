@@ -1,6 +1,9 @@
 %html
 	%head
 		%title Testing 
-		%link{:href => "/css/boostrap.css",:rel => "stylesheet",:type => "text/css"}
+		%link{:href => "css/boostrap.css",:rel => "stylesheet",:type => "text/css"}
+		%script{:src => "js/bootstrap.min.js"}
+		%script{:src => "js/jquery.js"}
 	%body
-		%a.btn{:href => "https://google.com"} Google
+		%a{:href => "https://google.com",:class => "btn btn-danger"} Google
+		%i{:class => "glyphicon glyphicon-fire"}
