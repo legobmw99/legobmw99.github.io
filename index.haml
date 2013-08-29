@@ -21,4 +21,20 @@
 							%a{:href => "about"}
 								.glyphicon.glyphicon-info-sign.glyphicon-white
 								About
-		
+		.container
+			.carousel.slide#carousel
+				%ol.carousel-indicators
+					%li.active{:data => {:target => "#carousel", :slide_to => 0}}
+					%li{:data => {:target => "#carousel", :slide_to => 1}}
+					%li{:data => {:target => "#carousel", :slide_to => 2}}
+				.carousel-inner
+					.item.active
+						%img{:src=>"http://i.imgur.com/Hr3ZJVC.jpg"}
+					.item
+						%img{:src=>"http://i.imgur.com/DsGW86y.jpg"}
+					.item
+						%img{:src=>"http://i.imgur.com/jJfQwRK.jpg"}
+				%a.left.carousel-control{:href=>"#carousel", :data=>{:slide=> "prev"}}
+					%span.icon-prev
+				%a.right.carousel-control{:href=>"#carousel", :data=>{:slide=> "next"}}
+					%span.icon-next
