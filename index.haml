@@ -7,6 +7,7 @@
 		%script{:src =>"http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"}
 		%script{:src => "js/bootstrap.min.js"}
 		%style body { padding-top: 60px;}
+		%script   $(document).ready(function(){$('.carousel').carousel({interval: 4000});});
 	%body
 		.navbar.navbar-fixed-top.navbar-inverse
 			.container
@@ -30,11 +31,11 @@
 					%li{:data => {:target => "#carousel", :slide_to => 2}}
 				.carousel-inner
 					.item.active
-						%img{:src=>"http://i.imgur.com/Hr3ZJVC.jpg"}
+						%img{:src=>"img/carousel.png"}
 					.item
-						%img{:src=>"http://i.imgur.com/DsGW86y.jpg"}
+						%img{:src=>"img/carousel1.png"}
 					.item
-						%img{:src=>"http://i.imgur.com/jJfQwRK.jpg"}
+						%img{:src=>"img/carousel2.png"}
 				%a.left.carousel-control{:href=>"#carousel", :data=>{:slide=> "prev"}}
 					%span.icon-prev
 				%a.right.carousel-control{:href=>"#carousel", :data=>{:slide=> "next"}}
