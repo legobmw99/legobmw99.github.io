@@ -37,10 +37,21 @@
 				.carousel-inner
 					.item.active
 						%img{:src=>"img/carousel.png"}
+						.carousel-caption
+							%h3 Lego's World.
+							%p Games, code, did I mention games?
 					.item
 						%img{:src=>"img/carousel1.png"}
+						.carousel-caption
+							%h3 Let's be friends
+							%p
+								%a.btn.btn-primary{:href =>"/about"} About Me &raquo;
 					.item
 						%img{:src=>"img/carousel2.png"}
+						.carousel-caption
+							%h3 Check me out
+							%p
+								%a.btn.btn-success{:href=>"/about#links"} External Links &raquo;
 				%a.left.carousel-control{:href=>"#carousel", :data=>{:slide=> "prev"}}
 					%span.icon-prev
 				%a.right.carousel-control{:href=>"#carousel", :data=>{:slide=> "next"}}
