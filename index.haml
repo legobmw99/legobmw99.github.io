@@ -9,7 +9,7 @@
 		%style body { padding-top: 60px;}
 		%script   $(document).ready(function(){$('.carousel').carousel({interval: 4000});});
 	%body
-		.navbar.navbar-fixed-top.navbar-inverse
+		.navbar.navbar-fixed-top.navbar-inverse{:role=>"navigation"}
 			.container
 				.navbar-header
 					%button.navbar-toggle{:type=>"button", :data => {:toggle=>"collapse", :target=>".navbar-main-collapse" }}
