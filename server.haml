@@ -1,0 +1,30 @@
+!!! 5
+%html
+	%head
+		%title legobmw99 - Home
+		%meta{:name => "viewport",:content => "width=device-width"}
+		%link{:href => "css/bootstrap.css",:rel => "stylesheet",:type => "text/css"}
+		%script{:src =>"http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"}
+		%script{:src => "js/bootstrap.min.js"}
+		%style body { padding-top: 60px;}
+		%script   $(document).ready(function(){$('.carousel').carousel({interval: 4000});});
+	%body
+		.navbar.navbar-fixed-top.navbar-inverse{:role=>"navigation"}
+			.container
+				.navbar-header
+					%button.navbar-toggle{:type=>"button", :data => {:toggle=>"collapse", :target=>".navbar-main-collapse" }}
+						%span.sr-only Toggle Navbar
+						%span.icon-bar
+						%span.icon-bar
+						%span.icon-bar
+					%a.navbar-brand{:href => "/"} legobmw99
+				.navbar-collapse.collapse.navbar-main-collapse
+					%ul.nav.navbar-nav
+						%li
+							%a{:href => "/"}
+								%span.glyphicon.glyphicon-home
+								Home
+						%li
+							%a{:href=> "/server"}
+								%span.glyphicon.glyphicon-signal
+								Server
