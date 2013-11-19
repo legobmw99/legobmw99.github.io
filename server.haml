@@ -1,7 +1,7 @@
 !!! 5
 %html
 	%head
-		%title legobmw99 - Home
+		%title legobmw99 - Server
 		%meta{:name => "viewport",:content => "width=device-width"}
 		%link{:href => "css/bootstrap.css",:rel => "stylesheet",:type => "text/css"}
 		%script{:src =>"http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"}
@@ -24,7 +24,13 @@
 							%a{:href => "/"}
 								%span.glyphicon.glyphicon-home
 								Home
-						%li
+						%li.active
 							%a{:href=> "/server"}
 								%span.glyphicon.glyphicon-signal
 								Server
+		.container
+			%section
+				.page-header
+					%h2.text-muted Server
+				.row
+					%img.img-rounded.img-thumbnail.center-block{:src=>"img/server.jpg", :title=>"Logo by Enicholas", :width=>"600px"}
