@@ -1,89 +1,93 @@
 !!! 5
 %html
-	%head
-		%title legobmw99 - Home
-		%meta{:name => "viewport",:content => "width=device-width"}
-		%link{:href => "assets/css/bootstrap.css",:rel => "stylesheet",:type => "text/css"}
-		%script{:src =>"http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"}
-		%script{:src => "assets/js/bootstrap.min.js"}
-		%style body { padding-top: 60px;}
-		%script   $(document).ready(function(){$('.carousel').carousel({interval: 4000});});
-	%body
-		.navbar.navbar-fixed-top.navbar-inverse{:role=>"navigation"}
-			.container
-				.navbar-header
-					%button.navbar-toggle{:type=>"button", :data => {:toggle=>"collapse", :target=>".navbar-main-collapse" }}
-						%span.sr-only Toggle Navbar
-						%span.icon-bar
-						%span.icon-bar
-						%span.icon-bar
-					%a.navbar-brand{:href => "/"} legobmw99
-				.navbar-collapse.collapse.navbar-main-collapse
-					%ul.nav.navbar-nav
-						%li.active
-							%a{:href => "/"}
-								%span.glyphicon.glyphicon-home.glyphicon-white
-								Home
-						%li
-							%a{:href=> "/server"}
-								%span.glyphicon.glyphicon-signal
-								Server
-		.container
-			.carousel.slide#carousel
-				%ol.carousel-indicators
-					%li.active{:data => {:target => "#carousel", :slide_to => 0}}
-					%li{:data => {:target => "#carousel", :slide_to => 1}}
-					%li{:data => {:target => "#carousel", :slide_to => 2}}
-				.carousel-inner
-					.item.active
-						%img{:src=>"assets/img/carousel.jpg"}
-						.carousel-caption
-							%h3 Lego's World.
-							%p Gamer, coder, did I mention gamer?
-					.item
-						%img{:src=>"assets/img/carousel1.jpg"}
-						.carousel-caption
-							%h3 Let's be friends
-							%p
-								%a.btn.btn-primary{:href =>"/server"} Check out my server &raquo;
-					.item
-						%img{:src=>"assets/img/carousel2.jpg"}
-						.carousel-caption
-							%h3 Check me out
-							%p Click some of those links &darr;
-				%a.left.carousel-control{:href=>"#carousel", :data=>{:slide=> "prev"}}
-					%span.icon-prev
-				%a.right.carousel-control{:href=>"#carousel", :data=>{:slide=> "next"}}
-					%span.icon-next
-			.container.center-block
-				.col-xs-2.visible-xs.visible-sm
-				.col-md-1.col-md-offset-3.col-xs-1
-					%ul.nav.nav-pills
-						%li 
-							%a{:href=>"https://twitter.com/Legobmw99"}
-								%img{:src=>"assets/img/twitter.png"}
-				.col-md-1.col-xs-1
-					%ul.nav.nav-pills
-						%li 
-							%a{:href=>"http://steamcommunity.com/id/legobmw99"}
-								%img{:src=>"assets/img/steam.png"}
-				.col-md-1.col-xs-1
-					%ul.nav.nav-pills
-						%li
-							%a{:href=>"https://github.com/legobmw99"}
-								%img{:src=>"assets/img/github.png"}
-				.col-md-1.col-xs-1
-					%ul.nav.nav-pills
-						%li
-							%a{:href=>"http://www.reddit.com/user/legobmw99/"}
-								%img{:src=>"assets/img/reddit.png"}
-				.col-md-1.col-xs-1
-					%ul.nav.nav-pills
-						%li
-							%a{:href=>"http://www.youtube.com/user/legobmw99"}
-								%img{:src=>"assets/img/youtube.png"}
-				.col-md-1.col-xs-1
-					%ul.nav.nav-pills
-						%li
-							%a{:href=>"http://www.twitch.com/legobmw99"}
-								%img{:src=>"assets/img/twitch.png"}		
+    %head
+        %title legobmw99 - Home
+        %meta{:name => "viewport",:content => "width=device-width"}
+        %link{:href => "assets/css/bootstrap.css",:rel => "stylesheet",:type => "text/css"}
+        %script{:src =>"http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"}
+        %script{:src => "assets/js/bootstrap.min.js"}
+        %style body { padding-top: 60px;}
+        %script   $(document).ready(function(){$('.carousel').carousel({interval: 4000});});
+    %body
+        .navbar.navbar-fixed-top.navbar-inverse{:role=>"navigation"}
+            .container
+                .navbar-header
+                    %button.navbar-toggle{:type=>"button", :data => {:toggle=>"collapse", :target=>".navbar-main-collapse" }}
+                        %span.sr-only Toggle Navbar
+                %span.icon-bar
+                    %span.icon-bar
+                        %span.icon-bar
+                    %a.navbar-brand{:href => "/"} legobmw99
+                .navbar-collapse.collapse.navbar-main-collapse
+                    %ul.nav.navbar-nav
+                        %li.active
+                            %a{:href => "/"}
+                                %span.glyphicon.glyphicon-home.glyphicon-white
+                                Home
+                        %li
+                            %a{:href=> "/server"}
+                                %span.glyphicon.glyphicon-signal
+                                Server
+                        %li
+                            %a{:href => "/about"}
+                                %span.glyphicon.glyphicon-info-sign.glyphicon-white
+                                About
+        .container
+            .carousel.slide#carousel
+                %ol.carousel-indicators
+                    %li.active{:data => {:target => "#carousel", :slide_to => 0}}
+                    %li{:data => {:target => "#carousel", :slide_to => 1}}
+                    %li{:data => {:target => "#carousel", :slide_to => 2}}
+                .carousel-inner
+                    .item.active
+                        %img{:src=>"assets/img/carousel.jpg"}
+                        .carousel-caption
+                            %h3 Lego's World.
+                            %p Gamer, coder, did I mention gamer?
+                    .item
+                        %img{:src=>"assets/img/carousel1.jpg"}
+                        .carousel-caption
+                            %h3 Let's be friends
+                            %p
+                                %a.btn.btn-primary{:href =>"/server"} Check out my server &raquo;
+                    .item
+                        %img{:src=>"assets/img/carousel2.jpg"}
+                        .carousel-caption
+                            %h3 Check me out
+                            %p Click some of those links &darr;
+                %a.left.carousel-control{:href=>"#carousel", :data=>{:slide=> "prev"}}
+                    %span.icon-prev
+                %a.right.carousel-control{:href=>"#carousel", :data=>{:slide=> "next"}}
+                    %span.icon-next
+            .container.center-block
+                .col-xs-2.visible-xs.visible-sm
+                .col-md-1.col-md-offset-3.col-xs-1
+                    %ul.nav.nav-pills
+                        %li 
+                            %a{:href=>"https://twitter.com/Legobmw99"}
+                                %img{:src=>"assets/img/twitter.png"}
+                .col-md-1.col-xs-1
+                    %ul.nav.nav-pills
+                        %li 
+                            %a{:href=>"http://steamcommunity.com/id/legobmw99"}
+                                %img{:src=>"assets/img/steam.png"}
+                .col-md-1.col-xs-1
+                    %ul.nav.nav-pills
+                        %li
+                            %a{:href=>"https://github.com/legobmw99"}
+                                %img{:src=>"assets/img/github.png"}
+                .col-md-1.col-xs-1
+                    %ul.nav.nav-pills
+                        %li
+                            %a{:href=>"http://www.reddit.com/user/legobmw99/"}
+                                %img{:src=>"assets/img/reddit.png"}
+                .col-md-1.col-xs-1
+                    %ul.nav.nav-pills
+                        %li
+                            %a{:href=>"http://www.youtube.com/user/legobmw99"}
+                                %img{:src=>"assets/img/youtube.png"}
+                .col-md-1.col-xs-1
+                    %ul.nav.nav-pills
+                        %li
+                            %a{:href=>"http://www.twitch.com/legobmw99"}
+                                %img{:src=>"assets/img/twitch.png"}
