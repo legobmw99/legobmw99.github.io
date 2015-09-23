@@ -27,15 +27,18 @@
                 .row
                     .col-xs-12.col-md-4
                         .well
-                            .col-xs-4
-                            .col-xs-4
-                                .input-group
-                                    %input{:type=>"radio"} Yes
-                                    %input{:type=>"radio"} No
-
+                            .radio
+                                %label
+                                    %input{:type=>"radio",:name=>"OptionsRadio",:id=>"optionsRadio1",:value=>"option1"} Yes
+                            .radio
+                                %label
+                                    %input{:type=>"radio",:name=>"OptionsRadio",:id=>"optionsRadio2",:value=>"option2"} No
+                            .radio
+                                %label
+                                    %input{:type=>"radio",:name=>"OptionsRadio",:id=>"optionsRadio3",:value=>"option3",:disabled=>""} Maybe
+                            .btn-group.pull-right
+                                %a.btn.btn-info{:href => "ask4"} Confirm
                             %br
-                            %br
-                .row
                     .col-xs-12
                         .progress
                             .progress-bar.progress-bar-success{:role=>"progressbar", :"aria-valuemin"=>"0", :"aria-valuemax"=>"100", :"aria-valuenow"=>"20", :style=>"width: 75%"} 75%
